@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ 
+  height: 100vh;
+  position: relative;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  gap: 20px; 
+}
+
+.valentine {
+  font-size: 4rem;
+  color : lightpink;
+  animation: disappear-comeback 600ms ease-in-out infinite;
+}
+
+@keyframes disappear-comeback {
+  0%, 100% {
+    opacity: 1;
+  } 50% {
+    opacity: 0;
+  }
+}
+
+.description {
+  font-size: 1.5rem;
+  color: pink;
+  z-index: 999;
+}
+
+.chButton {
+  font-size: 1.3rem;
+  border: none;
+  background-color: transparent;
+  color: pink;
+  animation: disappear-comeback-ClickMe 1000ms ease-in-out infinite;
+}
+
+@keyframes disappear-comeback-ClickMe {
+  0%, 100% {
+    opacity: 1;
+  } 50% {
+    opacity: 0;
+  }
+}
+
+.img1 {
+  width: 150px;
+}
+
+.gif img:nth-child(1) {
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  width: 200px;
+}
+
+.gif img:nth-child(2) {
+  position: absolute;
+  top: 350px;
+}
+
+@media  (max-width: 768px) {
+  .gif img:nth-child(2) {
+    top: 430px;
+  }
+}
