@@ -92,7 +92,7 @@ input:checked ~ .heart {
 .letter .start {
   width: 100%;
   text-align: start;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: px;
 }
 /* .letter {
