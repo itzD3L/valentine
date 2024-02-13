@@ -20,6 +20,7 @@ body {
 .valentine {
   font-size: 4rem;
   color : lightpink;
+  z-index: 999;
   animation: disappear-comeback 600ms ease-in-out infinite;
 }
 
@@ -62,6 +63,7 @@ body {
   top: 100px;
   right: 10px;
   width: 200px;
+  z-index: 0;
 }
 
 .gif img:nth-child(2) {
@@ -72,5 +74,15 @@ body {
 @media  (max-width: 768px) {
   .gif img:nth-child(2) {
     top: 430px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gif img:nth-child(2) {
+    top: 550px;
+  }
+  .gif img:nth-child(1) {
+    top: 60px;
+    z-index: 0;
   }
 }
